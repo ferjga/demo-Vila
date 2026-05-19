@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vila Celedonio | Odontología en Bahía Blanca</title>
+  <meta name="description" content="Consultorio odontológico Vila Celedonio en Bahía Blanca. Implantes, prótesis, estética dental y odontología general. Belgrano 523. Pedí tu turno hoy."/>
+  <meta name="keywords" content="dentista Bahía Blanca, implantes dentales Bahía Blanca, Vila Celedonio odontólogo, prótesis dental Bahía Blanca, estética dental"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Vila Celedonio | Odontología Integral en Bahía Blanca"/>
+  <meta property="og:description" content="Implantes, prótesis y estética dental con trato personalizado en Bahía Blanca."/>
+  <meta property="og:type" content="business.business"/>
+  <meta property="og:locale" content="es_AR"/>
+  <link rel="canonical" href="https://vila-celedonio.vercel.app/"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Vila Celedonio – Consultorio Odontológico",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Belgrano 523",
+      "addressLocality": "Bahía Blanca",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "telephone": "+542914545849",
+    "openingHours": "Mo-Th 15:00-20:00",
+    "priceRange": "$$"
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal: #0D9488;
+      --teal-dark: #0A7A70;
+      --teal-light: #CCFBF1;
+      --emerald: #10B981;
+      --dark: #0F2027;
+      --dark2: #162535;
+      --white: #FFFFFF;
+      --gray: #6B7280;
+      --light: #F0FDFA;
+      --radius: 16px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(--dark); line-height: 1.6; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.93); backdrop-filter: blur(14px);
+      border-bottom: 1px solid #E0F7F4;
+      padding: 0 5%; height: 66px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--dark); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+    .nav-logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--teal), var(--emerald)); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+    .nav-links { display: flex; gap: 26px; list-style: none; }
+    .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.88rem; font-weight: 600; transition: color .2s; }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta { background: linear-gradient(135deg, var(--teal), var(--emerald)); color: white; padding: 9px 22px; border-radius: 50px; text-decoration: none; font-size: 0.88rem; font-weight: 700; transition: all .2s; box-shadow: 0 3px 12px rgba(13,148,136,0.3); }
+    .nav-cta:hover { transform: scale(1.04); box-shadow: 0 6px 20px rgba(13,148,136,0.4); }
+    @media(max-width:768px) { .nav-links { display: none; } }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh; padding: 100px 5% 80px;
+      background: linear-gradient(160deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: center;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -120px; right: -120px;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(13,148,136,0.2) 0%, transparent 70%);
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: -80px; left: 5%;
+      width: 300px; height: 300px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 70%);
+    }
+    .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 70px; align-items: center; position: relative; z-index: 1; }
+    .hero-chip { display: inline-flex; align-items: center; gap: 8px; background: rgba(13,148,136,0.2); border: 1px solid rgba(13,148,136,0.4); color: #5EEAD4; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 22px; letter-spacing: .04em; }
+    h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.2rem, 3.8vw, 3.4rem); font-weight: 900; line-height: 1.1; color: white; margin-bottom: 20px; }
+    h1 span { background: linear-gradient(135deg, #5EEAD4, #34D399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-desc { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 34px; max-width: 460px; font-weight: 400; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-teal { background: linear-gradient(135deg, var(--teal), var(--emerald)); color: white; padding: 14px 28px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.92rem; font-family: 'Montserrat', sans-serif; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 6px 24px rgba(13,148,136,0.4); transition: all .2s; }
+    .btn-teal:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(13,148,136,0.5); }
+    .btn-glass { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; padding: 14px 26px; border-radius: 50px; text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: all .2s; }
+    .btn-glass:hover { background: rgba(255,255,255,0.15); }
+    .hero-stats { display: flex; gap: 36px; margin-top: 44px; padding-top: 36px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .hero-stat strong { display: block; font-family: 'Montserrat', sans-serif; font-size: 1.7rem; font-weight: 900; color: #5EEAD4; }
+    .hero-stat span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
+    /* Panel derecho */
+    .hero-panel { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 28px; backdrop-filter: blur(10px); }
+    .panel-title { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; color: #5EEAD4; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 18px; }
+    .panel-item { display: flex; gap: 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .panel-item:last-child { border-bottom: none; }
+    .panel-icon { width: 38px; height: 38px; min-width: 38px; background: rgba(13,148,136,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+    .panel-item strong { display: block; font-size: 0.88rem; color: white; font-weight: 600; margin-bottom: 2px; }
+    .panel-item span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+    .badge-live { display: inline-flex; align-items: center; gap: 8px; background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); border-radius: 50px; padding: 6px 14px; font-size: 0.78rem; font-weight: 700; color: #34D399; margin-bottom: 16px; font-family: 'Montserrat', sans-serif; }
+    .dot-pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); }
+    @media(max-width:768px) { .hero-inner { grid-template-columns: 1fr; } .hero-panel { display: none; } }
+
+    /* SECTIONS */
+    section { padding: 88px 5%; }
+    .section-label { text-align: center; color: var(--teal); font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 10px; }
+    h2 { font-family: 'Montserrat', sans-serif; text-align: center; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 12px; color: var(--dark); }
+    .section-sub { text-align: center; color: var(--gray); font-size: 0.97rem; max-width: 500px; margin: 0 auto 54px; }
+
+    /* SERVICIOS */
+    .servicios { background: var(--light); }
+    .servicios-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .servicio { background: white; border-radius: var(--radius); padding: 28px 22px; border: 1px solid #E0F7F4; transition: all .2s; }
+    .servicio:hover { border-color: var(--teal); transform: translateY(-4px); box-shadow: 0 12px 36px rgba(13,148,136,0.1); }
+    .servicio-icon { width: 48px; height: 48px; background: var(--teal-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 16px; }
+    .servicio h3 { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--dark); }
+    .servicio p { font-size: 0.84rem; color: var(--gray); line-height: 1.6; }
+
+    /* POR QUÉ */
+    .porque { background: white; }
+    .porque-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .porque-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+    .porque-item { display: flex; gap: 16px; align-items: flex-start; }
+    .porque-num { width: 36px; height: 36px; min-width: 36px; background: linear-gradient(135deg, var(--teal), var(--emerald)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-family: 'Montserrat', sans-serif; font-size: 0.82rem; font-weight: 800; }
+    .porque-item h4 { font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .porque-item p { font-size: 0.84rem; color: var(--gray); }
+    .porque-visual { background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); border-radius: 24px; padding: 44px 36px; color: white; text-align: center; }
+    .porque-visual .big { font-family: 'Montserrat', sans-serif; font-size: 4.5rem; font-weight: 900; background: linear-gradient(135deg, #5EEAD4, #34D399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+    .porque-visual p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin: 8px 0 28px; }
+    .porque-visual-divider { height: 1px; background: rgba(255,255,255,0.1); margin: 24px 0; }
+    .porque-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .porque-facts strong { font-family: 'Montserrat', sans-serif; display: block; font-size: 1.6rem; font-weight: 900; color: #5EEAD4; }
+    .porque-facts span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+    @media(max-width:768px) { .porque-inner { grid-template-columns: 1fr; } }
+
+    /* TESTIMONIOS */
+    .testimonios { background: var(--light); }
+    .test-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .test-card { background: white; border-radius: var(--radius); padding: 26px; border: 1px solid #E0F7F4; }
+    .test-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .test-stars { color: #F59E0B; }
+    .test-badge { background: var(--teal-light); color: var(--teal); font-size: 0.72rem; font-weight: 700; font-family: 'Montserrat', sans-serif; padding: 3px 10px; border-radius: 50px; }
+    .test-text { font-size: 0.9rem; color: var(--gray); font-style: italic; line-height: 1.7; margin-bottom: 18px; }
+    .test-autor { display: flex; align-items: center; gap: 10px; }
+    .test-av { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--teal), var(--emerald)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 0.82rem; font-family: 'Montserrat', sans-serif; }
+    .test-autor strong { font-size: 0.85rem; font-weight: 700; color: var(--dark); }
+    .test-autor span { font-size: 0.78rem; color: var(--gray); display: block; }
+
+    /* CONTACTO */
+    .contacto { background: var(--dark); color: white; }
+    .contacto h2 { color: white; }
+    .contacto .section-label { color: #5EEAD4; }
+    .contacto .section-sub { color: rgba(255,255,255,0.55); }
+    .contacto-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .contacto-info { display: flex; flex-direction: column; gap: 20px; }
+    .ci { display: flex; gap: 14px; align-items: flex-start; }
+    .ci-icon { width: 42px; height: 42px; min-width: 42px; background: rgba(13,148,136,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+    .ci h4 { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-bottom: 2px; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: .06em; }
+    .ci p { font-size: 0.95rem; color: white; font-weight: 600; }
+    .contacto-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); padding: 30px; display: flex; flex-direction: column; gap: 12px; }
+    .contacto-form input, .contacto-form select { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px 16px; color: white; font-size: 0.88rem; font-family: 'Nunito', sans-serif; outline: none; transition: border-color .2s; width: 100%; }
+    .contacto-form input::placeholder { color: rgba(255,255,255,0.3); }
+    .contacto-form input:focus, .contacto-form select:focus { border-color: var(--teal); }
+    .contacto-form select option { background: var(--dark2); }
+    .btn-wa { background: #25D366; color: white; padding: 14px; border-radius: 10px; font-weight: 700; font-size: 0.92rem; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; transition: all .2s; font-family: 'Montserrat', sans-serif; }
+    .btn-wa:hover { background: #1fba58; transform: translateY(-2px); }
+    @media(max-width:768px) { .contacto-inner { grid-template-columns: 1fr; } }
+
+    footer { background: #080F14; text-align: center; padding: 24px 5%; color: rgba(255,255,255,0.35); font-size: 0.8rem; }
+    footer strong { color: #5EEAD4; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo"><div class="nav-logo-icon">🦷</div> Vila Celedonio</a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#opiniones">Opiniones</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="nav-cta">Pedir turno</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-chip">🦷 Odontología Integral · Bahía Blanca</div>
+      <h1>Recuperá tu sonrisa con <span>tecnología y calidez</span></h1>
+      <p class="hero-desc">Implantes, prótesis y estética dental en un consultorio donde el profesional te conoce por tu nombre y te acompaña en cada paso.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5492914545849?text=Hola%2C%20quiero%20pedir%20un%20turno%20en%20Vila%20Celedonio" class="btn-teal" target="_blank">📅 Pedir turno por WhatsApp</a>
+        <a href="#servicios" class="btn-glass">Ver servicios</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>9.8</strong><span>Puntaje Google</span></div>
+        <div class="hero-stat"><strong>9 ★</strong><span>Reseñas reales</span></div>
+        <div class="hero-stat"><strong>+10 años</strong><span>Experiencia</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="badge-live"><div class="dot-pulse"></div>Turnos disponibles</div>
+      <div class="hero-panel">
+        <div class="panel-title">¿Por qué elegirnos?</div>
+        <div class="panel-item"><div class="panel-icon">🦷</div><div><strong>Implantes dentales</strong><span>Planificación completa y seguimiento</span></div></div>
+        <div class="panel-item"><div class="panel-icon">😁</div><div><strong>Estética dental</strong><span>Rehabilitación integral de la sonrisa</span></div></div>
+        <div class="panel-item"><div class="panel-icon">🛡️</div><div><strong>Prótesis fijas y removibles</strong><span>Materiales premium, resultados naturales</span></div></div>
+        <div class="panel-item"><div class="panel-icon">❤️</div><div><strong>Atención para miedosos</strong><span>Trato paciente y sin apuros</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="section-label">Especialidades</div>
+  <h2>Odontología integral para adultos</h2>
+  <p class="section-sub">No somos una clínica masiva. Nos especializamos en rehabilitación y estética con trato cercano.</p>
+  <div class="servicios-grid">
+    <div class="servicio"><div class="servicio-icon">🦺</div><h3>Implantes dentales</h3><p>Reemplazá dientes perdidos con implantes de titanio. Planificación completa y seguimiento.</p></div>
+    <div class="servicio"><div class="servicio-icon">😁</div><h3>Prótesis dental</h3><p>Prótesis fijas y removibles con materiales de primera calidad para un resultado natural.</p></div>
+    <div class="servicio"><div class="servicio-icon">✨</div><h3>Estética dental</h3><p>Blanqueamiento y carillas para transformar tu sonrisa de manera segura y duradera.</p></div>
+    <div class="servicio"><div class="servicio-icon">🔬</div><h3>Endodoncia</h3><p>Tratamientos de conducto sin dolor gracias a la anestesia adecuada y técnica precisa.</p></div>
+    <div class="servicio"><div class="servicio-icon">🦷</div><h3>Odontología general</h3><p>Limpiezas, caries, extracciones y controles para mantener tu salud bucal en óptimas condiciones.</p></div>
+    <div class="servicio"><div class="servicio-icon">🩺</div><h3>Urgencias dentales</h3><p>Atención de urgencias para que ningún dolor te deje sin solución cuando más lo necesitás.</p></div>
+  </div>
+</section>
+
+<section class="porque" id="nosotros">
+  <div class="section-label">Por qué elegirnos</div>
+  <h2>Tu dentista de cabecera en Bahía Blanca</h2>
+  <p class="section-sub">Un profesional con más de 10 años de experiencia que te acompaña en todo el proceso.</p>
+  <div class="porque-inner">
+    <ul class="porque-list">
+      <li class="porque-item"><div class="porque-num">01</div><div><h4>Siempre el mismo profesional</h4><p>Te conocemos, conocemos tu historia y no te derivamos a desconocidos.</p></div></li>
+      <li class="porque-item"><div class="porque-num">02</div><div><h4>Implantes y rehabilitación integral</h4><p>Resolvemos casos complejos de rehabilitación en un solo consultorio.</p></div></li>
+      <li class="porque-item"><div class="porque-num">03</div><div><h4>Tiempo para cada paciente</h4><p>No existe el apuro. Cada consulta tiene el tiempo que necesita.</p></div></li>
+      <li class="porque-item"><div class="porque-num">04</div><div><h4>Presupuesto claro y sin sorpresas</h4><p>Sabés el costo total antes de empezar cualquier tratamiento.</p></div></li>
+    </ul>
+    <div class="porque-visual">
+      <div class="big">9.8</div>
+      <p>puntaje en Google con 9 reseñas verificadas</p>
+      <div class="porque-visual-divider"></div>
+      <div class="porque-facts">
+        <div><strong>+10</strong><span>Años en BB</span></div>
+        <div><strong>9.8★</strong><span>Google</span></div>
+        <div><strong>Implantes</strong><span>Especialidad</span></div>
+        <div><strong>100%</strong><span>Personalizado</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonios" id="opiniones">
+  <div class="section-label">Testimonios</div>
+  <h2>Lo que dicen nuestros pacientes</h2>
+  <p class="section-sub">9 reseñas reales con un promedio de 9.8 sobre 10.</p>
+  <div class="test-grid">
+    <div class="test-card"><div class="test-header"><div class="test-stars">★★★★★</div><div class="test-badge">Implantes</div></div><p class="test-text">"Me colocó dos implantes y el resultado fue impresionante. Profesional, paciente y con excelente técnica. 100% recomendable."</p><div class="test-autor"><div class="test-av">PR</div><div><strong>Pablo R.</strong><span>Implantes dentales</span></div></div></div>
+    <div class="test-card"><div class="test-header"><div class="test-stars">★★★★★</div><div class="test-badge">Prótesis</div></div><p class="test-text">"Llevaba años postergando la prótesis por miedo. El Dr. Vila me dio tanta confianza que no tardé en decidirme. Excelente resultado."</p><div class="test-autor"><div class="test-av">EL</div><div><strong>Elena L.</strong><span>Prótesis dental</span></div></div></div>
+    <div class="test-card"><div class="test-header"><div class="test-stars">★★★★★</div><div class="test-badge">General</div></div><p class="test-text">"Atención personalizada como no encontré en ninguna clínica grande. Me explicó todo, me dio opciones y me acompañó en el proceso."</p><div class="test-autor"><div class="test-av">CR</div><div><strong>Carlos R.</strong><span>Rehabilitación</span></div></div></div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="section-label">Contacto</div>
+  <h2>Empezá hoy</h2>
+  <p class="section-sub">Primera consulta sin compromiso. Analizamos tu caso y te proponemos el mejor plan.</p>
+  <div class="contacto-inner">
+    <div class="contacto-info">
+      <div class="ci"><div class="ci-icon">📍</div><div><h4>Dirección</h4><p>Belgrano 523<br>Bahía Blanca, Buenos Aires</p></div></div>
+      <div class="ci"><div class="ci-icon">🕐</div><div><h4>Horario</h4><p>Lunes a Jueves<br>15:00 – 20:00 hs</p></div></div>
+      <div class="ci"><div class="ci-icon">📞</div><div><h4>WhatsApp</h4><p>+54 9 291 454-5849</p></div></div>
+      <div class="ci"><div class="ci-icon">💳</div><div><h4>Obras sociales</h4><p>Principales obras sociales<br>y planes de pago</p></div></div>
+    </div>
+    <div class="contacto-form">
+      <input type="text" placeholder="Tu nombre completo"/>
+      <input type="tel" placeholder="Tu WhatsApp"/>
+      <select><option value="" disabled selected>¿Qué tratamiento buscás?</option><option>Implante dental</option><option>Prótesis</option><option>Estética / Blanqueamiento</option><option>Endodoncia</option><option>Limpieza general</option><option>Urgencia</option><option>Primera consulta</option></select>
+      <a href="https://wa.me/5492914545849?text=Hola%2C%20quiero%20pedir%20un%20turno%20en%20Vila%20Celedonio" class="btn-wa" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Pedir turno por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <strong>Vila Celedonio – Consultorio Odontológico</strong> · Belgrano 523, Bahía Blanca · Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
